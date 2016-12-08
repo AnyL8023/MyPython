@@ -36,10 +36,6 @@ def preprocess(tokens):
 def handler_kill(signum, frame):
     raise OSError("Killed!")
 
-# 一个自定义的信号处理函数，当当前进程被强制中断的时候触发
-def handler_kill(signum, frame):
-    raise OSError("Killed!")
-
 def execute(cmd_tokens):
     # 'a' 模式表示以添加的方式打开指定文件
     # 这个模式下文件对象的 write 操作不会覆盖文件原有的信息，而是添加到文件原有信息之后
